@@ -19,10 +19,11 @@ import static lombok.AccessLevel.PRIVATE;
 @FieldDefaults(level = PRIVATE)
 public class Order {
     @Id
-            @Column(name = "ORDER_ID")
+    @Column(name = "ORDER_ID")
     Long id;
     @Column(name = "MEMBER_ID")
     Long memberId;
+    Member member;
     LocalDateTime orderDate;
     @Enumerated(value = STRING)
     OrderStatus status;

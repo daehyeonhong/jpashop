@@ -3,6 +3,11 @@
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/">
     <persistence-unit name="hello">
+        <class>jpabook.domain.Item</class>
+        <class>jpabook.domain.Member</class>
+        <class>jpabook.domain.Order</class>
+        <class>jpabook.domain.OrderItem</class>
+        <class>jpabook.domain.OrderStatus</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.user" value="root"/>
